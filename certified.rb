@@ -10,3 +10,11 @@ Net::HTTP.class_eval do
   end
 end
 
+OpenSSL::X509::Store.class_eval do
+  alias _set_default_paths set_default_paths
+
+  def set_default_paths
+    self._set_default_paths
+    self.add_file "#{File.dirname(__FILE__)}/certs/ca-bundle.crt"
+  end
+end

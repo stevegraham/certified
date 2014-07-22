@@ -16,5 +16,5 @@ Gem::Specification.new do |s|
 
   s.executables << 'certified-update'
 
-  s.post_install_message = "IMPORTANT: Remember to use the included executable `certifed-update` regularly to keep your certificate bundle up to date."
+  s.post_install_message = "IMPORTANT: Remember to use the included executable `certified-update` regularly to keep your certificate bundle up to date."
 end

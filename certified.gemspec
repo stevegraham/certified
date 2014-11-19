@@ -2,6 +2,7 @@ Gem::Specification.new do |s|
   s.platform                    = Gem::Platform::RUBY
   s.name                        = 'certified'
   s.version                     = '1.0.0'
+  s.licenses                    = ['MIT']
   s.summary                     = 'Ensure net/https uses OpenSSL::SSL::VERIFY_PEER to verify SSL certificates and provides certificate bundle in case OpenSSL cannot find one'
   s.description                 = "Ensure net/https uses OpenSSL::SSL::VERIFY_PEER to verify SSL certificates and provides certificate bundle in case OpenSSL cannot find one"
 

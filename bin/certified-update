@@ -10,7 +10,7 @@ puts "Updating ca-bundle from #{CERT_BUNDLE_URL}"
 
 cert_path = Pathname.new File.expand_path('../../certs', __FILE__)
 
-open(CERT_BUNDLE_URL) do |remote_file|
+URI.open(CERT_BUNDLE_URL) do |remote_file|
   File.open(cert_path + 'ca-bundle.crt', 'w+') do |cert_file|
     remote_file.each_line do |line|
       cert_file << line
